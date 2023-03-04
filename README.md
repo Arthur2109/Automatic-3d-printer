@@ -16,5 +16,3 @@ Plant cycle operation :
 - Uploading of the new Gcode file into a SD card, and running of the plant.
 
 I succeeded in running my printer during 72h in order to produce 200 little PLA plastic cups as a gift to the students of my college, for a student representative campaign.
-
-I have not anymore the python file I am talking about.
