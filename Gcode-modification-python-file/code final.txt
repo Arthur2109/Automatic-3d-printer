@@ -1,0 +1,16 @@
+M107
+G1 F3300 E2417.32275
+G0 F3600 X117.895 Y103.275 Z26.429
+M106 S255 ;start fan full power
+M140 S0 ;heated bed heater off (if you have it)
+;Home machine
+G91 ;relative positioning
+M104 S0
+G1 Z+2 F3600 ;move Z up a bit and retract filament even more
+G90
+G28 X Y
+;Forced ventilation
+M107 ;stop fan
+;Shut down motor
+M84 ;shut down motors
+

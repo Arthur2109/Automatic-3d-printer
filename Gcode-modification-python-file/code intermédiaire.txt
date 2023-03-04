@@ -1,0 +1,20 @@
+;/////////////////////////////////code intermédiaire///////////////////////
+
+
+M82       ;set extruder to absolute mode
+G92 E0    ; 0 the extruded length
+G1 E-5    ; on rétracte un peu de fil
+G1 Z40 X190 Y200 
+
+G1 F4000 Z0.3
+
+G1 F7000 X0 Y0         //On fait basculer la pièce avec la tête d'impression
+
+G28
+G1 Z3
+G92 Z3.22            // on compense les défauts du palpeur comme dans le code intial
+G1 Z0.3
+G1 F3000 X105.022 Y108.699  //On revient en position
+
+
+;///////////////////////////////////////////////////////////////////////////
